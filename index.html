@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+    <title>Recipe Generator</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Recipe Generator</h1>
+      <p>Welcome to this simple Recipe Generator</p>
+    </div>
+    <section id="ingredients-input">
+      <h4>Please insert the ingredients you have on hand below</h4>
+      <form id="ingredients-input-form">
+        <label for="ingredients-form">Ingredients:</label>
+        <input
+          type="text"
+          name="ingredients-form"
+          id="ingredients-form"
+          placeholder="Insert your ingredient(s)"
+        />
+      </form>
+    </section>
+
+    <section id="ingredients-listeed">
+      <h4>Ingredients</h4>
+      <ul id="ingredients-list">
+        <!-- insert the list of ingredients submitted using dom manipulation here -->
+      </ul>
+    </section>
+
+    <section id="Recipes">
+      <h4>Based on your ingredients, here are the recipes you can make</h4>
+      <div id="recipes-cards">
+        <ul id="Recipes list">
+          <!-- insert the loaded list of recipes here using dom manipulation -->
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
