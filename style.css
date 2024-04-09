@@ -2,7 +2,6 @@ body {
     background-color: #e16d7b;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-    font-weight: bolder;
     font-style: normal;
     color: #FCF5ED;
 }
@@ -73,3 +72,61 @@ body {
     }
 }
 
+
+
+#ingredients-list {
+    list-style: disc;
+    padding: 0;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px; 
+    font-style: italic;
+}
+
+.ingredient-item button {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: bold; 
+    color: #1F1717;
+    font-style: italic;
+}
+
+.ingredient-item button:hover {
+    color: #F4BF96;
+}
+
+
+.recipe-card {
+    border: 1px solid #FCF5ED;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: inset;
+    border-right: inset;
+    background-color: #FEFDED;
+    color: #1F1717;
+  }
+  
+  .recipe-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .recipe-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
