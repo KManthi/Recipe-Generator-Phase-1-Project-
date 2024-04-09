@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./index.js"></script>
     <title>Recipe Generator</title>
   </head>
@@ -12,26 +18,32 @@
       <h1>Recipe Generator</h1>
       <p>Welcome to this simple Recipe Generator</p>
     </div>
-    <section id="ingredients-input">
-      <h4>Please insert the ingredients you have on hand below</h4>
-      <form id="ingredients-input-form">
-        <label for="ingredients-form">Ingredients:</label>
-        <input
-          type="text"
-          name="ingredients-form"
-          id="ingredients-form"
-          placeholder="Insert your ingredient(s)"
-        />
-      </form>
-    </section>
+    <div class="container">
+      <section id="ingredients-input">
+        <h4>Please insert the ingredients you have on hand below</h4>
+        <form id="ingredients-input-form">
+          <label for="ingredients-form">Ingredients:</label>
+          <div class="input-container">
+            <input
+              type="text"
+              name="ingredients-form"
+              id="ingredients-form"
+              placeholder="Insert your ingredient here"
+            />
+            <button type="submit" id="search-button">
+              <img src="./icons/search icon.png" alt="search icon" />
+            </button>
+          </div>
+        </form>
+      </section>
 
-    <section id="ingredients-listeed">
-      <h4>Ingredients</h4>
-      <ul id="ingredients-list">
-        <!-- insert the list of ingredients submitted using dom manipulation here -->
-      </ul>
-    </section>
-
+      <section id="ingredients-listed">
+        <h4>Ingredients</h4>
+        <ul id="ingredients-list">
+          <!-- insert the list of ingredients submitted using dom manipulation here -->
+        </ul>
+      </section>
+    </div>
     <section id="Recipes">
       <h4>Based on your ingredients, here are the recipes you can make</h4>
       <div id="recipes-cards">
