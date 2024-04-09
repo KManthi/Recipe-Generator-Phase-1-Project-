@@ -1,5 +1,5 @@
 body {
-    background-color: #CE5A67;
+    background-color: #e16d7b;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: bolder;
@@ -13,7 +13,6 @@ body {
 
 .container {
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column; 
 }
@@ -26,6 +25,7 @@ body {
     box-sizing: border-box;
     color: #1F1717;
     margin-bottom: 20px; 
+    border-radius: 10px;
 }
 
 #ingredients-input {
@@ -72,3 +72,4 @@ body {
         height: 100%; 
     }
 }
+
