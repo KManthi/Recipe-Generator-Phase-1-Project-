@@ -85,7 +85,7 @@ body {
     margin-bottom: 5px;
     padding: 8px;
     border-radius: 5px; 
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .ingredient-item button {
