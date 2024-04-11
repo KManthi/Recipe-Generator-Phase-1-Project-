@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function loadRecipes(ingredients) {
-        const apiKey = '5ae23adc8bd544b285e95b3fd793ef52';
+        const apiKey = "5ae23adc8bd544b285e95b3fd793ef52";
         const baseUrl = 'https://api.spoonacular.com/recipes/findByIngredients';
 
         fetch(`${baseUrl}?apiKey=${apiKey}&ingredients=${ingredients.join(',')}&number=5&instructionsRequired=true`)
