@@ -1,8 +1,7 @@
-require('dotenv').config();
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('ingredients-input-form');
     const ingredientsList = document.getElementById('ingredients-list');
+    const deleteRecipesButton = document.getElementById('delete-recipes-button');
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -15,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function displayIngredient(ingredient) {
+        if (ingredient === ''){
+            return;
+        }
         const ingredientContainer = document.createElement('div');
         ingredientContainer.classList.add('ingredient-item');
 
@@ -34,13 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const searchButton = document.getElementById('search-button');
     searchButton.addEventListener('click', () => {
-        const ingredients = Array.from(document.querySelectorAll('.ingredient-item li')).map(item => item.textContent);    
+        
 
-        loadRecipes(ingredients);
+        const ingredients = Array.from(document.querySelectorAll('.ingredient-item li')).map(item => item.textContent);    
+       
+
+        
+            loadRecipes(ingredients)
+        
     });
 
     function loadRecipes(ingredients) {
-        const apiKey = process.env.API_KEY;
+        const apiKey = '5ae23adc8bd544b285e95b3fd793ef52';
         const baseUrl = 'https://api.spoonacular.com/recipes/findByIngredients';
 
         fetch(`${baseUrl}?apiKey=${apiKey}&ingredients=${ingredients.join(',')}&number=5&instructionsRequired=true`)
@@ -61,6 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayRecipes(recipes) {
         const recipesContainer = document.getElementById('recipes-cards');
         recipesContainer.innerHTML = '';
+
+        deleteRecipesButton.addEventListener('click', () => {
+            recipesContainer.innerHTML = ''; 
+        });
 
         recipes.forEach(recipe => {
             const recipeCard = document.createElement('div');
@@ -87,3 +98,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 });
+

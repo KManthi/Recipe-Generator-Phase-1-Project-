@@ -130,3 +130,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
   }
+
+  #delete-recipes-button{
+    background-color: inherit;
+    border-color: transparent;
+    margin-left: 10px;
+  }
+ 
+  .recipes-header {
+    display: flex;
+    align-items: center;
+  }
+

@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./index.js"></script>
     <title>Recipe Generator</title>
   </head>
   <body>
@@ -45,10 +44,20 @@
       </section>
     </div>
     <section id="Recipes">
+      <div class="recipes-header">
       <h4>Based on your ingredients, here are the recipes you can make</h4>
+      <button id="delete-recipes-button">
+        <img
+          src="./icons/delete_FILL0_wght400_GRAD0_opsz24.png"
+          alt="delete recipes"
+        />
+      </button>
+      </div>
       <div id="recipes-cards">
         <!-- insert the loaded list of recipes here using DOM Manipulation -->
-    </div>
+      </div>
     </section>
+
+    <script defer src="./index.js"></script>
   </body>
 </html>
