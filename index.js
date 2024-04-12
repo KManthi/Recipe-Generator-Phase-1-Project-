@@ -252,12 +252,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 recipeCard.appendChild(instructionsContainer);
             }
             
-            recipeCard.addEventListener('mouseover', () => {
-                recipeCard.style.backgroundColor = 'teal';
+            title.addEventListener('mouseover', () => {
+                title.style.color = 'light blue';
             });
             
-            recipeCard.addEventListener('mouseout', () => {
-                recipeCard.style.backgroundColor = ''; 
+            title.addEventListener('mouseout', () => {
+                title.style.color = ''; 
             });
 
             recipesContainer.appendChild(recipeCard);
