@@ -85,7 +85,6 @@ body {
     margin-bottom: 5px;
     padding: 8px;
     border-radius: 5px; 
-    /* font-style: italic; */
 }
 
 .ingredient-item button {
@@ -104,6 +103,8 @@ body {
 
 
 .recipe-card {
+    display: grid;
+    grid-auto-columns: auto 1fr;
     border: 1px solid #FCF5ED;
     border-radius: 8px;
     padding: 20px;
@@ -124,6 +125,7 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 36px;
   }
   
   .recipe-card p {
